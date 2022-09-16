@@ -1,7 +1,7 @@
 const greeting = "Hello";
 
 const obj = {
-    name: "javid"
+    name: "javid",
     age: 25
 }
 
