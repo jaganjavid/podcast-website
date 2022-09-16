@@ -2,7 +2,8 @@ const greeting = "Hello";
 
 const obj = {
     name: "javid",
-    age: 25
+    age: 25,
+    gender: "male"
 }
 
 let heyBuddy = 5;
