@@ -51,7 +51,9 @@ h4 {
 .talk,
 .topic,
 .listeners,
-.episodes {
+.episodes,
+.sponsor,
+.contact {
   padding: 80px 0px;
 }
 
@@ -171,6 +173,9 @@ header .nav-btn-wrapper nav, header .nav-btn-wrapper > div {
   position: relative;
   padding: 120px 0px;
   background-color: #F7EDE8;
+}
+.banner .text-break {
+  display: block;
 }
 .banner .banner-wrapper {
   text-align: center;
@@ -316,6 +321,48 @@ header .nav-btn-wrapper nav, header .nav-btn-wrapper > div {
   right: -65px;
 }
 
+.sponsor {
+  background-color: #EDF3F7;
+}
+.sponsor .sec-heading h2 img {
+  position: absolute;
+  left: -35px;
+  top: -20px;
+}
+.sponsor .sponsor-wrapper {
+  position: relative;
+}
+.sponsor .sponsor-wrapper > div:last-child > img:first-child {
+  position: absolute;
+  top: -55px;
+  right: -55px;
+  z-index: -1;
+}
+.sponsor .sponsor-wrapper > div:last-child > img:last-child {
+  position: absolute;
+  bottom: 0px;
+  left: -45px;
+  z-index: -1;
+}
+.sponsor .sponsor-wrapper .sponsor-box {
+  background-color: #ffffff;
+}
+.sponsor .sponsor-wrapper .sponsor-box:hover {
+  background-color: #F7EDE8;
+  border-color: #CD4631 !important;
+}
+
+.contact > div {
+  max-width: 700px;
+}
+.contact #submit-input, .contact #submit-button {
+  padding: 10px 30px;
+  background-color: #CD4631;
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+}
+
 @media screen and (min-width: 576px) {
   .supported-wrapper > div:first-child {
     width: 30%;
@@ -333,6 +380,9 @@ header .nav-btn-wrapper nav, header .nav-btn-wrapper > div {
   }
   .episodes .episodes-wrapper > div > div:first-child {
     gap: 15px;
+  }
+  .float-img img {
+    display: none;
   }
 }
 @media screen and (max-width: 768px) {
@@ -365,6 +415,9 @@ header .nav-btn-wrapper nav, header .nav-btn-wrapper > div {
   }
 }
 @media screen and (max-width: 576px) {
+  .banner img {
+    opacity: 0.45;
+  }
   h1 {
     font-size: 45px;
   }

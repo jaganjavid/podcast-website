@@ -63,7 +63,9 @@ h4{
 .talk,
 .topic,
 .listeners,
-.episodes{
+.episodes,
+.sponsor,
+.contact{
     padding: 80px 0px;
 }
 
@@ -193,6 +195,9 @@ header{
     position: relative;
     padding: 120px 0px;
     background-color: $bodyColor;
+    .text-break{
+        display: block;
+    }
     .banner-wrapper{
         text-align: center;
         .btn{
@@ -302,10 +307,6 @@ header{
 // Topic End
 
 
-// Listeners Start
-
-// Listeners End
-
 
 // Episode Start
 
@@ -367,6 +368,65 @@ header{
 
 // Episode End
 
+// Sponsor Start
+.sponsor{
+    background-color: #EDF3F7;
+    .sec-heading{
+        h2 {
+            img{
+                position: absolute;
+                left: -35px;
+                top: -20px;
+            }
+        }
+    }
+    .sponsor-wrapper{
+        position: relative;
+    
+        >div:last-child{
+            >img:first-child{
+                position: absolute;
+                top: -55px;
+                right: -55px;
+                z-index: -1;
+            }
+            >img:last-child{
+                position: absolute;
+                bottom: 0px;
+                left: -45px;
+                z-index: -1;
+            }
+        }
+        .sponsor-box{
+            background-color: #ffffff;
+            &:hover{
+                background-color: #F7EDE8;
+                border-color: $mainColor !important;
+            } 
+        }
+    }
+}
+
+
+// Sponsor End
+
+
+// Contact Start
+.contact {
+    >div{
+        max-width: 700px;
+    }
+    #submit-input, #submit-button{
+        padding: 10px 30px;
+        background-color: $mainColor;
+        color: #ffffff;
+        border-radius: 8px;
+        border: none;
+    }
+}
+// Contact End
+
+
 @media screen and (min-width: 576px){
     .supported-wrapper{
         >div:first-child{
@@ -395,6 +455,9 @@ header{
        
             
     }
+  }
+  .float-img img{
+    display: none;
   }
 }
 @media screen and (max-width: 768px){
@@ -433,6 +496,11 @@ header{
       }
 }
 @media screen and (max-width: 576px){
+    .banner{
+        img{
+            opacity: 0.45;
+        }
+    }
     h1{
         font-size: 45px;
     }
@@ -474,3 +542,15 @@ header{
 
 }
 // Media End
+
+
+
+
+// GRID 
+
+// xs  <576px	
+// sm  ≥576px	
+// md  ≥768px	
+// lg  ≥992px	
+// xl  ≥1200px	
+// xxl ≥1400px
